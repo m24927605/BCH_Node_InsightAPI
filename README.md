@@ -22,9 +22,9 @@ Step4
 ```cd ~```  
 ```bitcore create bitcoin-cash-node```  
 ```cd bitcoin-cash-node```  
-```npm install bitcore-lib-cash --save```  
-```npm uninstall bitcore-lib  --save```
-```npm install insight-api insight-ui --save``` 
+```npm install bitcore-lib-cash --save```    
+```npm uninstall bitcore-lib  --save```  
+```npm install insight-api insight-ui --save```   
 ```npm install```   
 
 Step5  
