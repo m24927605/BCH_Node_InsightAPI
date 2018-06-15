@@ -73,7 +73,8 @@ Step7.2
 
 //////Done!!!!///////
 
-check something 
+**Check Something**
+
 bitcoin-cash-node/package.json
 ```
 {
