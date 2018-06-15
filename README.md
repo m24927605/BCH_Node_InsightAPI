@@ -6,7 +6,7 @@ Step1
 ```sudo apt-get install -y nodejs```  
 
 Step2  
-//Install bitcoinABC's bitcoind  
+//Install bitcoinABC's bitcoind (version is 0.17.2) 
 ```sudo apt-get install software-properties-common```  
 ```sudo add-apt-repository ppa:bitcoin-abc/ppa```  
 ```sudo apt-get update```  
@@ -72,3 +72,35 @@ Step7.2
 ```bitcore start```
 
 //////Done!!!!///////
+
+check something 
+bitcoin-cash-node/package.json
+```
+{
+  "description": "A full Bitcoin node build with Bitcore",
+  "repository": "https://github.com/user/project",
+  "license": "MIT",
+  "readme": "README.md",
+  "dependencies": {
+    "bitcore-lib-cash": "^0.18.1",
+    "bitcore-node": "^3.1.3",
+    "insight-api": "^0.4.3",
+    "insight-ui": "^0.4.0"
+  }
+}
+```
+[somewhere you want to sync and store the data]/bitcoin.conf
+```
+server=1
+whitelist=127.0.0.1
+txindex=1
+addressindex=1
+timestampindex=1
+spentindex=1
+zmqpubrawtx=tcp://127.0.0.1:28332
+zmqpubhashblock=tcp://127.0.0.1:28332
+rpcallowip=127.0.0.1
+rpcuser=bitcoin
+rpcpassword=local321
+uacomment=bitcore
+```
